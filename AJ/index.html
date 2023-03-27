@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AJNETS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .w3-row-padding img {margin-bottom: 12px}
+    /* Set the width of the sidebar to 120px */
+    .w3-sidebar {width: 120px;background: #222;}
+    /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+    #main {margin-left: 120px}
+    /* Remove margins from "page content" on small screens */
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    </style>
+  </head>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="https://lh3.googleusercontent.com/pw/AMWts8AWrCqkkWpV4B4uct8zKMprpgXIhOUPCqLwRfmNbLci1teQuGkbQA2NvMExXmxIQavOJaYBAShpiUe9SWLuz75EhhaZbeR-Si4SqBBzyt4NNcKBm-iI2ruVplhE7rNkyj_ZdQlekqXFN4DZDGNS0LpJZNWnrVO9ErC0gfE3urm1oIBavlwqfG0PoCvjaRLT70gfjpMzf0pUx9TOrET-ylJ5uIvTt5Bh8uVOxdB7kdULhhJwY_mXDC46yJsP7NYj8ULlKEq16uN_lye9aJm8omacmaItNSNt8zb0eXjiQ-3wjS4NJ33YT7keDq_qnh_f9TG3oeaaX9lTS3cy8s7c3Q32ZtsGbDqqGIK6eY2nNtBFG1epSx8ARVnufutdeaYBDGi8riNyKB5hw77hKv6QcgH_UQmGAfdb_Uio0VOlYRSi5CI99QKZu9Bwfda_YmWBssx4wzhtpCpCtK83qg-5BjdKRp4CEr8ollOBciVZybX5fNOTFbWLl1wd2Ik2-Baqhm7BwNbratNC3F3-Y5qwmaqJnJz7CuE0e80cJkR1PbNDc3INuCMhaRrX-gS7XNNATOXE0xunBxQUyz3cwETMqF4dBaCRcLPyG0xGpX9gpFxt_q7rP53qWYXV2M6nf5HcU_xiVpxIbqIh7f_HgUxGU4BWY7TuaGp31vzqJsQ3QCNA77OtkrMyCYR_dObZzS882T2lyT89Lb2_KRvWzdEg7kxLnt41glXvl0v2GWggRmWJB5Ffsu0UUkP99rm39M8VLco2vGXAkcjmpgcLI2GOY3MjsnBtYMbfEztRLqf37BnCjJxEx00oHhGl102a7IqFR5by1nKtTFyoN_Q_M6siLAYoSp9AjztAM8s-V-aZJwIo71I4PsNMrins2h33BbaXRh8uz0NdKTwy97CiGakKzw=s500-no?authuser=0" style="width:100%">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> John Abraham.</h1>
+    <p>Full-stack Software Engineer and Virtual Assisant.</p>
+    <img src="https://lh3.googleusercontent.com/pw/AMWts8Cs05eh8-Wi5eUcQPaOTZl1hbupkczKOi28PkqLT5CdqHuxr3madhfQUvVm_cCjhf3D3ciulkc948g-YCXd5mvVXUEguRwPanTQvHLtli41HJnNlZnOwjPHIc3A4gvFGWDYtNTfCc0Wep01rT0E18sr97-HiwvTbqrJ0clMLYVSVROdVgwfB3HEADhE4o4Jj509FSDc6N-Vo4Y9vRe-j640RInD40_5EDKtXb2v3wD7wXOJ7l2dqwM1gIxnidOgibVXLjDOkPPPuk-9VaYbmflsealiZgkdoPRNyD9CxTWbv4lHKnL6D6jfVa8x72zT9YwGefZlgZ3Sg94cGT-Pn3ymVeJ2IZG6G0n7hk8PKceQvOed2bXMaHjRfVOroIxdL_9SxXrIcA-BFBLd1nys7TQ7mzOMZGpgOlGRrUBnF00RhjVPmvN0iqm_677ll5XlbbG2JyKzo93uvlxaHtwHFQtMb7dlkMRF-0GXD3Yi5rcdEna7cKbzOJ_KCZDIZMwaPAKfNj8q9TWinUkjBfDAPxMznK0ehMhrBL762SpZl8838z7r4Bg4OSlw-UTcBZO15gXYRgMXYYTt0I05vlW4rIf93dHViSmDYq9xEoldwF6VDMVgndKKxxpPxG5MgD4qSo7BfIcHw0-TUupY18Y640WeRv4zJSIdEaudwXTyZ6bGJ0wVzrXZLuK31FCQG2T3YMEPSUWZ7q5FsPGyPScd_w_LaHbCXCsU5bblrvSaZg8HicQbUnPGbVidILwT60YKSpRu9YBvR03y1zr0BCsgy0NzjcRFU2i-HHGEc_1BeVLviBiEIr-Ccdd8ReJLO_Z47JNI8jeTRaUwF_zWEqCy5CuaczB5WS2jSMUso7wnRA7_eCGhpQIzC40Mt-c8_8SgGmQgpKIXk2vRzYpzeAAVmg=w527-h701-no?authuser=0" alt="boy" class="w3-image" width="5000" height="992">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">John Abraham.</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>A computer science and mathematics graduate and tech enthusiast who over time has garthered skill and been certified globally to work in the software and internet companies.
+      <br>Born and breed in Africa, am an alumni of the <a href="https://www.alxafrica.com/">ALX Africa</a> having over:
+      <ol type="i">
+        <li>5 years experience in technical support</li>
+        <li>4 years experience in computer science and  mathematics</li>
+        <li>3 years experience as a Virtual Assisant</li>
+        <li>2 years experience in software Engineering</li>
+      </ol>
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Web Design and Development</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:98%"></div>
+    </div>
+    <p class="w3-wide">Software Development and Design</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:99%"></div>
+    </div>
+    <p class="w3-wide">Virtual Assisant</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Technical support</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"></div>
+    </div><br>
+
+    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+
+    <!-- Grid for pricing tables -->
+    <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">System Development</li>
+          <li class="w3-padding-16">General system maintance</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">Technical Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 25</h2>
+            <span class="w3-opacity">per day</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-half">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-padding-16">Web Design</li>
+          <li class="w3-padding-16">System Development</li>
+          <li class="w3-padding-16">General system maintance</li>
+          <li class="w3-padding-16">Mail Support</li>
+          <li class="w3-padding-16">Technical Support</li>
+          <li class="w3-padding-16">
+            <h2>$ 40</h2>
+            <span class="w3-opacity">per day</span>
+          </li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+    <img src="https://www.w3schools.com/w3images/bandmember.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>AJ saved us from the worst case scenario website failure .</p><br>
+
+    <img src="https://www.w3schools.com/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Rebecca Flex.</span> CEO at Mr.Fix it .</p>
+    <p>No one is better than John Abraham when it comes to Software Development.</p>
+  <!-- End About Section -->
+  </div>
+
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://lh3.googleusercontent.com/pw/AMWts8B89wpDVkjZfHyxPA-c0f2zNcoHKtWzeHYEB6LX9jj3qn9c5B6jgQZ7xbydIuDpSl7Lr9eXMX8C67DSwOUboZ28PMCqOVkXaIpGnc07nOSNg9TepUsQVXXwgWqXB6pz2LVDG3om6Za1m6ICTsiQaZp9L_rE4ha3RJxKGyTavpcsjwmiQGpJjExGAQkdBpbc-QtOoP9B128P4Z8CUz2MZ3ZuPBnX9gE36Sh5p1Nigzlo4zdl7bO7R1H_fTZ9QNyk_d9GdrNmHECSgSOui7fnFSVrwBxGQJILd2VExBVBzbjVDGBI1BaKN0Mw5gVBRDnCroA6V_WqQ6fsfUlAiNQPm8q7Yk8TmIzCH3gMFkIsD_sHdLgmT7CSVuq4FWBv1EHJ2CKkTAoFzmQNM5cVmvk7PqbeZKsCWp836AIso3VWZEXB8mCL7SFWSHfPQT2H1snqqintwJJ8p77Vt1mZdtd4NupROLu2Q-huNE58l4rfJzLa7F45KwnilZJlU9y7k9OZJxmkegdhcMG8xJmx2Hf5US978mjvYaH9tNrLcDmww_IrW8lJMHh5nKUFBvGkcSNhhILymob1HOlympAqkN30MJyaYGK9UXpRCMM9a3S2TitL4TjOiUJd3z0VdTGB2BWQI5M2H1W11EMuOJ1SivLT7qQuk8nZKJofyy0c6UVYcro4VqByIIFnaPIb1s4ShxP2z8JgiTdpxRAilANxixKRs0_5znf6rH9U4REbnngoWSooKAiQpZyE9gty7Wt1nuhC2B7pCxFwseO3Rm7_WERcB3vOJBLTqFbt9jELWctck4Vvhq8sky0McLJwHASZw0bRt3sfeh4g1pX56vrnKKcbg0eutzPVsEV5OCREYf8SoLxTAlhQqplWTBz0lfSYKZJvZVevqGlniCOyzpupzDJDDA=w675-h380-no?authuser=0" style="width:100%">
+        <img src="https://lh3.googleusercontent.com/pw/AMWts8AFAM35T__J6xIQmDAtPM5opH_biySMC6nXyYOXzAukvEBPRlxAWNgOBOW4L3yNLavYAw1tj5al484Q9XAJ4XzzshpQdSYuK3D6nyQ2XVrNcB2TD7zBErTRpOWDsXisDH_eMe6M2TVwt37CDNf2UoKhNwepXl1V_QAZQz-pWvXvT_dJvrLUk_oqp-TkZU2OBvJwKA1I4GEJbcTdMx2NsQkZg2CfthiHrl1x_60WgMfTRmzGNAEgWSkOCO5GkDabrZ31wA96BKlJyNFiU0c4IuAj0m9iOMHRoA859jK93tlbG-s9xknDLIaI4K3tPQpErNSPvNq1pqQXWuUCrqhc6kFMFerCvv4vihfrmv854qzBs2XDH2fNpJOYbVBdlnMHwtgCIj0Hor4cBFAq5BhjF3Hgo-2nZkGao2D1XfJAgTOwTyvtB4FYw7vLGIroqlXXsYzFntf9Ve0bm74Z6PmRcVHjd4ahzKJpFcWQXjFjwA8d71L356AmH4T1At4JgiDamelLKkjvevFxsqGtISlNhVVP35a48dbtH985iJVERWWQ5ATB9aVOTyq3EZXq77sVcQ1BvNPiqlwNUKrBDpKLcCncq3_Ejp5fQ8CgphwRmG90oJf-OlaKoNiXqKzwVVd1JFr5qKDRjkJ6Rldm8ut8Fh3NaQB0eQ-NA80WV8YRlnHevFQcFz6rKrbjPZayvFPRZqR8AsxS-82K_x2l-gIzB7pAXwPL5MuOmA1OsMZyAq3MX_80n0Mp0lEj9IvBjkOhQKoX5YSCzML-_pK3uniZ_KKYaLQsQvvum2qPHvcAXDV0tP6-M3emJV16t7hInMrJeL3ho_C1K0S3p1eQIswr9Lblzn4YcVPP_MfvP0_h1IXU6tqe3zqLCfy3VXTDUOuEwGmqgYiPD7g9H13aD818fw=w675-h361-no?authuser=0" style="width:100%">
+        <img src="https://lh3.googleusercontent.com/pw/AMWts8C_EffDZGxYkfbOva6Gwvll8E2wXRux1AgU53GlEaKhDLCvsSFixUtaOk02n5hMIgoQ4hJfZoDxzyVvPWjyuKeOP6vgE6aTtMe2voBrKbBst0IEyEW3dDWgCD9-ScL0d-oLvaEXCr5-2n-ZhmFKGGv6_ROSPHwjLbr_1EVT8dWGCgGdmdM5ggir0SSnPUO_AatgkHt4EjbTVSfkgiP4LIsO1LKJkyiWxeioKelfwfIDW8xZ6Ue8hvQNhh71ccz_DBf_e08Ra5AZPQBKxGEAsszlXDJF0pBJCN2drwEEAR8_s1KtLST_2jtpkdmYiHqcb1sPGhpW59Ngq191Y9JzBMJak8_pRjJoyJO6WRWOJIh4XrvxT4KyauYOlk4CJbLNZNKwOvJQJMhqEZp4yk1bPkSDCLUToKosBqbWTTFB58NQ2kI6jNi-RvUCR0tJpSQPkjb-lNzd5GS-I6wdbXwylAwbwXs9r7CzsaG7j5vxyE4Dbo1elCQivlSpeylOaW--VhJ8ZMWnlt6zxJJG7VqkvShSGfZN790ilh4MYMvy1irSzwxRTlOinBnqO0BXa48_eHBeQkvMGUPnOAGR-G_4q7VKI_J6Uio69whvoJevI_EiitA8l1RY1d7zkJOBxyfqB4kKnR1lIqS-k04ku3WjpXfjVEPkyvgeZfi9Mv-DZMRr2nNQuCG5-0Wvu3Kk81AC4mzDXDVZiXDL49VmkwD16rLcL19jSr3RGjz8BNj05eTpkN1N30nqrSyDlLOSXv5SvdrKkyUV-eYIwOeWtpjC7daB_MOS-3ZzALzVANMsrdycwCVujUefH-ko6XcIsNYFN0VsZdaIB-Ceh4QZ7JANFfBxRxMjGc0FTiXddTME0C9JUpZHf9Tr01C2CXFWuWY-XJ2MYd9JMw24f9SsfStbuw=w675-h380-no?authuser=0" style="width:100%">
+        <img src="https://lh3.googleusercontent.com/pw/AMWts8A_a-gOplukJqlRMcfU3tMbWJZOLj6t25nw8ad-zJDrXD6nAQIrcvV57sfoJpEqPSBiL8f31jYJoGgfp2amSPccGSQ4jjzhWS_2yyAi9JN4213vYDY2Vw8JIUEK0SE7QPK2jgK4BHnWvWZ7vwSmmajx82ZxMJ1nvNOREWC8wyg--lImxSrCgN41SB7eaH1107M7QEP9wgXbv3rbNM6P9xsS-bL4yFzLyBSZ2oZaX6jfR9L750apwLzA14mIC5Eq8roqWY6aawQ0Gh_CTUTc4VpE1O5nzTcu2XuczlX-bM6PR_zfhxW53juQyoK0UT9SlfDxD_8sQD_17f2jUnnbliNs1_40T6t8CijXTtYMQ0EW8EzatdrgxbpwOziS3q9CI36OLKHIX1x_lCbGarDhcP96AADdHip89BAaeUDK98gsT1B9hSpYzKXE8nlQPasqTCx84a_GMRTG9-p_i1XyJe_703CtCWK-ZQAkC17aHtuTjTPbjOLO9sSjJewbSivdCZGkwp1QF3TC5HNMWL370H2omXfpd49ELG6xnky8gYklRPMW10yGMlEPoW1OkeRO5TYgAfscbUqGeawvSyls3dltabk9cokDBGKcdPEGOca2CVGa5a0Xg-IbtP5doDQ0-JKTXxNKLpi-jNdccB8-mOJvkrJvGgPz0710L-Qr4Mlhif4bfsw71P-0t8Pr2bz3-HbmpKghNjagwg2z4wq-iU0-4XGXsNjTBy-PcfAXZ9XyhraoM7WxF_APNSgPM8HNpk3-hXxBMPz4sjjiV0TlC5WjOiSCplhPSr9q4tanGRPBC4Hp-pREvIkfjvNM7CxzvUia-CNTV_363Ul_ZTIKaOvXITUjVOQS5yP-WaSQwFvwmnhZW7t3T11oZ0evHUwTnAzMEVSZC1tPX0iwZOYLJg=w675-h450-no?authuser=0" style="width:
+        100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="https://lh3.googleusercontent.com/pw/AMWts8Bd_h92SCwQfMuqsPciTa8-WKqPrQrGb8mTr3jZ955bjuCTmFYGZv-Ea0h1uJTRO19nZEUzKsUd9u7UlD-JUa6KZDDcVDTsITgM2zhFA9MCf_3uYw1KIpwMca7b-c0xzdvVPKasNIXoglpUq5btJ7PkqBSSOEeQk2eAVXeZgyd8fpnlvl_uI9UjOULiwdqXJNw4dWCd6k416aq4PfjMaXi3i2dr__fd0-oUjJiRY2odEbntu1nzxmGJZ-xgL8_Y8rCr1tXUh_Y8YmjPQL_dNO8wef3dSqjpmwPs8LaBYEwusEpAh63dwl94J4GkTPk4HIuP3h7fz0ZWR_DnDv00hjcVeorHX7st4TmKc0JJCjHM485BdwmCkFPZHfHYclt99Q-uZHaiJ7UabYC5vjQaV3ORuLIYlElJwzt4qAn074zW-IpmXTy5_VqPmhB60mdlbvYy0wK2XLSywVb3a7AKsMt6zxoMDymo34cSM1nUtXljc3Tscp0DGR2Mjfzm2LisUjI-2OIliVzg07-xRPJkVb0YtoLxBZs5r5TQofNLmJFv92RQT4DMVlxDZXvBLdOilf67-a2FnFbvmdnYh3lkIdZkTR61qw5eZaEJrmVCkoBhPvU-01Rf0KAyFPX8bJgmANjeDY6B8PTEtLcdFaNHIv9UwWvs88F6Umjj1FR1W5Eisiw_vde8d_dkd-S6v938Oparxz4KdpL3nUklgjvjbWUEiUgW8_e-sYyGX5ibtFtD9XTPhsnLOfMbfQbr3WA_7W_zfmBZGB6-7o3UXWn7Vku_slCLoHH0W0VRDoKn8OaXYRYT0W9tZm3cCFMgVkou7KpURXjhDbM1I7MfDXbsfJA2OYrM_OU8hJ2uzKZzPm9BNbhdcjDZ4AkFiCKbIiNhcwKQyyP9x8PBBO9fT9jNvw=w275-h183-no?authuser=0" style="width:100%">
+        <img src="https://lh3.googleusercontent.com/pw/AMWts8CO73_-3TGPJ6KgLX9eGezpPCExNmEc5QCP6v6ZuWKVWVj_r58mRunpyYMu81gAnGeAV0mmnTIhEi1uxjN3s7SdPGyuCfuHM106C9CahC1cwjncLzoUO2bWc81m0edcmOuXO7LRSJzTV7Mvlp2kidaWntRYEgityae2WAxMpyWe2RII2pGex6YcxEpoo8LBOfa9X5GonnbbNwfP7i_jAZIv0q13Qy6JhLCEdB1Ofsb4VpOJZ_PC-2vjHUtEpiVvLAbKVaVvfW2S53B5Fcdf8kZq0owsQWXJyriSU8RkO-VaPAL9byc7JbYVKgzrNPHiu1BHjogDqYHzKHA-dq0E_yVdDKhaLUM4sgFhj__DUwMNnpLJVOL_wWJtfTFzYJ5RVBBVU7-Wqqquq651rBIs3Mz7IGcSVZBCCDSECfyBk6uQRSdzb1n1ACTxa6d411k0Tsc-X-29oerSJSBVF5iLQMHtfI80_Ilt6KFn7oeiOG2R-jj9Ot1tzgRL0x4OIbRHXe2LiIjHScmOxkcECg0XDWuLtsgvTMOmBJ3ZTtf3E-UpO1pxdh-nfXVM2J4HzLJ0R9HPQYqRiVU_YmkH9plSYp4XCUrqiPdE1PmU3663IBriXGfuU5spGqhfjhsTIZPWyTkZf6Pn5ART7ftPzRzv5LwjNOh8YB4OabvK6oFDJprcMuz4EJRAIV6oUxwvD5CtGXEg3uPUzgRudxqsJrBAqx72kgNiztG2zKZaD8luiLgQkuz8EEeTXLLHlWZUDgWnSH0w8NxS9n_gTxnd_eGfW4Z_NjpI3Sl_gG_t1Afgd3fT_9CERiR-gI--fg5Jq5hX729Sd9TEyTMdGBJB6unzfJB9Bve3II1zxq2EXv5vYl9z570ST7FZi_ioXnOPzeKzUfCuDyBfnhSxL29u_vHBuw=w675-h507-no?authuser=0" style="width:100%">
+        <img src="https://lh3.googleusercontent.com/pw/AMWts8A_a-gOplukJqlRMcfU3tMbWJZOLj6t25nw8ad-zJDrXD6nAQIrcvV57sfoJpEqPSBiL8f31jYJoGgfp2amSPccGSQ4jjzhWS_2yyAi9JN4213vYDY2Vw8JIUEK0SE7QPK2jgK4BHnWvWZ7vwSmmajx82ZxMJ1nvNOREWC8wyg--lImxSrCgN41SB7eaH1107M7QEP9wgXbv3rbNM6P9xsS-bL4yFzLyBSZ2oZaX6jfR9L750apwLzA14mIC5Eq8roqWY6aawQ0Gh_CTUTc4VpE1O5nzTcu2XuczlX-bM6PR_zfhxW53juQyoK0UT9SlfDxD_8sQD_17f2jUnnbliNs1_40T6t8CijXTtYMQ0EW8EzatdrgxbpwOziS3q9CI36OLKHIX1x_lCbGarDhcP96AADdHip89BAaeUDK98gsT1B9hSpYzKXE8nlQPasqTCx84a_GMRTG9-p_i1XyJe_703CtCWK-ZQAkC17aHtuTjTPbjOLO9sSjJewbSivdCZGkwp1QF3TC5HNMWL370H2omXfpd49ELG6xnky8gYklRPMW10yGMlEPoW1OkeRO5TYgAfscbUqGeawvSyls3dltabk9cokDBGKcdPEGOca2CVGa5a0Xg-IbtP5doDQ0-JKTXxNKLpi-jNdccB8-mOJvkrJvGgPz0710L-Qr4Mlhif4bfsw71P-0t8Pr2bz3-HbmpKghNjagwg2z4wq-iU0-4XGXsNjTBy-PcfAXZ9XyhraoM7WxF_APNSgPM8HNpk3-hXxBMPz4sjjiV0TlC5WjOiSCplhPSr9q4tanGRPBC4Hp-pREvIkfjvNM7CxzvUia-CNTV_363Ul_ZTIKaOvXITUjVOQS5yP-WaSQwFvwmnhZW7t3T11oZ0evHUwTnAzMEVSZC1tPX0iwZOYLJg=w675-h450-no?authuser=0" style="width:100%">
+        <img src="https://lh3.googleusercontent.com/pw/AMWts8BH09a2iDBikIHroH8AU-W7ZxgPFy5aCXRfW7HeGiPud9CwWCy8fNGoDgiCIku__Oo77PRmL1Dba92AtNIVIZ2YV_yBAYCOUsRoNYOUBzs0ExxZaU4dykDbKzlF4BuvMNECiDMLo-rJUuyCCzeyMVWvP3oflZrqNnFJp4ZVDO5o9fQADjuFJ-CFRMUg-bpsUDbVVTOpp1iYKhaXZhAcz0-VWYFd67wVqQmZaNho6PS0H9rPHh0g0qTf1yQbYiPZ-a1GeB2Y1eWkidT2Kx7W_Ia35exjAUGS0RkRHmvKyJ8vImH-d6GIZKch9jNCaAUFP9JwlMUM-NL9cW_zJTTqtp5zeZGQ5qoU1HpQm-CUqE7eAhhtYx62dVYCAoDZy4ZcsdVtVPA9cnDDLG3E7IINs5nHOYqQqXut2CBoGFbq47w89ZOKRV819C-54TGwt4ZfatTuw-qTb3sXBe3ZQAltWvhbzpNwDGtQt6heKp6ltF02MNmqxiUy2KUEH0_bx1EDZD2vrclvPSqSd44IVr1GzxPvpj0TkqPBNvZHV62DSkBM95d24QYkL9GeBGh-jvTIi_X34AxGaJFXU9r6tgEfi92tYeZK-DqvwpdyDtQTmkQG-eeMmRb05f0zu98o6MrnGI0HRrGKRNnjM7wBPfiMHWlWEYBXqtZ2-26PfgtHZ0z0vqVOxeTAhh9QdYw7t9cNGr2-sYBkaxSHFWRcd_178T7Ejjj4PZR99LQlYAIMwrG5NRNZ-COa-b0vVmZbTZkTviN9E_PGtLav_49g7nIqu5uD-LtGvQM2VEeoSJQ5i-hLb6Uh4UUEwNjbUQW6Rc-f7P7cnlb1ng8lVLhcI3sfBXeK_Z_LQbO9LcCbjGbtm9KDzhfiIoG7gEklyGzP01SAV3seRl_DUksAPIOqLeccYw=w555-h260-no?authuser=0" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Mombasa, KENYA</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>Phone: +25475823617</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i><a href="mailto:jabrahamjohns@gmail.com?subject=AJNETS SERVICES"> Email: jabrahamjohns@gmail.com</a> </p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
+
